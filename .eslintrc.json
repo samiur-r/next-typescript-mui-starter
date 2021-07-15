@@ -23,29 +23,6 @@
     ],
     "rules": {
 		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-		"import/extensions": "off",
-		"prettier/prettier": "error",
-		"jest/no-hooks": "off",
-		"jest/prefer-expect-assertions": "off",
-		"jest/no-standalone-expect": "off",
-		"react/prop-types": 0,
-		"jest/expect-expect": [
-		"warn",
-		{
-			"assertFunctionNames": [
-			"expect",
-			"request.*.expect"
-			]
-		}
-		],
-		"jest/lowercase-name": "off",
-		"@typescript-eslint/no-empty-function": "warn",
-		"camelcase": "warn",
-		"no-case-declarations": "warn",
-		"no-use-before-define": "off",
-		"@typescript-eslint/no-use-before-define": [
-		"error"
-		],
-		"@typescript-eslint/explicit-module-boundary-types": "off"
+		"import/extensions": "off"
     }
 }
