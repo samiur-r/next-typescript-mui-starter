@@ -8,12 +8,17 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-			<body>
+		  <Head>
+			<title>My page</title>
+			<meta
+				name="viewport"
+				content="minimum-scale=1, initial-scale=1, width=device-width"
+			/>
+		  </Head>
+		  <body>
 			<Main />
 			<NextScript />
-			</body>
-		</Head>
+		  </body>
       </Html>
     );
   }
