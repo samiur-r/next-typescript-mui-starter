@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import App from "next/app";
+import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../config/theme";
 
@@ -18,6 +19,14 @@ export default class MyApp extends App {
 
     return (
       <>
+        <Head>
+          <title>NextJS Starter</title>
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width"
+          />
+          <meta name="theme-color" content={theme.palette.primary.main} />
+        </Head>
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />
         </ThemeProvider>

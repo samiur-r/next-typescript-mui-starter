@@ -8,17 +8,20 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-		  <Head>
-			<title>My page</title>
+		<Head>
 			<meta
-				name="viewport"
-				content="minimum-scale=1, initial-scale=1, width=device-width"
+				name="Description"
+				content="Simple starter boilerplate for nextjs"
 			/>
-		  </Head>
-		  <body>
-			<Main />
-			<NextScript />
-		  </body>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+			/>
+		</Head>
+		<body>
+		<Main />
+		<NextScript />
+		</body>
       </Html>
     );
   }
